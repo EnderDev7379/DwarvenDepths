@@ -1,0 +1,14 @@
+{
+  "item.dwarvendepths.raw_impure_mithril": "Raw Impure Mithril",
+  "item.dwarvendepths.raw_mithril": "Raw Mithril",
+  "item.dwarvendepths.impure_mithril": "Impure Mithril",
+  "item.dwarvendepths.mithril": "Mithril",
+
+  "dwarvendepths.configuration.title": "Dwarven Depths Configs",
+  "dwarvendepths.configuration.section.dwarvendepths.common.toml": "Dwarven Depths Configs",
+  "dwarvendepths.configuration.section.dwarvendepths.common.toml.title": "Dwarven Depths Configs",
+  "dwarvendepths.configuration.items": "Item List",
+  "dwarvendepths.configuration.logDirtBlock": "Log Dirt Block",
+  "dwarvendepths.configuration.magicNumberIntroduction": "Magic Number Text",
+  "dwarvendepths.configuration.magicNumber": "Magic Number"
+}
