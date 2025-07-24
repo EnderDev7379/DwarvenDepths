@@ -76,8 +76,8 @@ public class DwarvenDepths {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_IMPURE_MITHRIL);
-            event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.IMPURE_MITHRIL);
+            event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.MITHRIL);
         }
     }
