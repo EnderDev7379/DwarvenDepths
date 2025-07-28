@@ -1,6 +1,6 @@
 {
-  "model":{
-  "type": "minecraft:model",
-  "model": "dwarvendepths:item/raw_impure_mithril"
+  "model": {
+    "type": "minecraft:model",
+    "model": "dwarvendepths:item/raw_impure_mithril"
   }
 }

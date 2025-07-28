@@ -1,8 +1,15 @@
 {
   "item.dwarvendepths.raw_impure_mithril": "Raw Impure Mithril",
-  "item.dwarvendepths.raw_mithril": "Raw Mithril",
   "item.dwarvendepths.impure_mithril": "Impure Mithril",
+  "item.dwarvendepths.raw_mithril": "Raw Mithril",
   "item.dwarvendepths.mithril": "Mithril",
+
+  "block.dwarvendepths.impure_mithril_ore": "Impure Mithril Ore",
+  "block.dwarvendepths.raw_impure_mithril_block": "Block of Raw Impure Mithril",
+  "block.dwarvendepths.impure_mithril_block": "Block of Impure Mithril",
+  "block.dwarvendepths.mithril_ore": "Mithril Ore",
+  "block.dwarvendepths.raw_mithril_block": "Block of Raw Mithril",
+  "block.dwarvendepths.mithril_block": "Block of Mithril",
 
   "dwarvendepths.configuration.title": "Dwarven Depths Configs",
   "dwarvendepths.configuration.section.dwarvendepths.common.toml": "Dwarven Depths Configs",

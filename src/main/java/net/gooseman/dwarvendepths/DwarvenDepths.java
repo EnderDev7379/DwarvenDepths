@@ -1,5 +1,6 @@
 package net.gooseman.dwarvendepths;
 
+import net.gooseman.dwarvendepths.block.ModBlocks;
 import net.gooseman.dwarvendepths.item.ModItems;
 import org.slf4j.Logger;
 
@@ -51,7 +52,8 @@ public class DwarvenDepths {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
+        ModBlocks.registerBlockItems();
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -79,6 +81,14 @@ public class DwarvenDepths {
             event.accept(ModItems.IMPURE_MITHRIL);
             event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.MITHRIL);
+        } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.IMPURE_MITHRIL_ORE);
+            event.accept(ModBlocks.RAW_IMPURE_MITHRIL_BLOCK);
+            event.accept(ModBlocks.MITHRIL_ORE);
+            event.accept(ModBlocks.RAW_MITHRIL_BLOCK);
+        } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.IMPURE_MITHRIL_BLOCK);
+            event.accept(ModBlocks.MITHRIL_BLOCK);
         }
     }
 
