@@ -17,5 +17,7 @@
   "dwarvendepths.configuration.items": "Item List",
   "dwarvendepths.configuration.logDirtBlock": "Log Dirt Block",
   "dwarvendepths.configuration.magicNumberIntroduction": "Magic Number Text",
-  "dwarvendepths.configuration.magicNumber": "Magic Number"
+  "dwarvendepths.configuration.magicNumber": "Magic Number",
+
+  "creativetab.dwarvendepths.dwarven_metals_tab": "Dwarven Metals"
 }

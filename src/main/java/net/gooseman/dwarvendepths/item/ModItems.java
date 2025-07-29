@@ -7,7 +7,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DwarvenDepths.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DwarvenDepths.MOD_ID);
 
     public static final DeferredItem<Item> RAW_IMPURE_MITHRIL = ITEMS.registerItem("raw_impure_mithril", Item::new, new Item.Properties());
     public static final DeferredItem<Item> IMPURE_MITHRIL = ITEMS.registerItem("impure_mithril", Item::new, new Item.Properties());

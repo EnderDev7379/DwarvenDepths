@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = DwarvenDepths.MODID, dist = Dist.CLIENT)
+@Mod(value = DwarvenDepths.MOD_ID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = DwarvenDepths.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = DwarvenDepths.MOD_ID, value = Dist.CLIENT)
 public class DwarvenDepthsClient {
     public DwarvenDepthsClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
