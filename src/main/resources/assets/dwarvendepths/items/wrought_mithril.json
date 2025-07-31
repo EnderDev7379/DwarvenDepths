@@ -1,6 +1,6 @@
 {
   "model":{
     "type": "minecraft:model",
-    "model": "dwarvendepths:item/mithril"
+    "model": "dwarvendepths:item/wrought_mithril"
   }
 }

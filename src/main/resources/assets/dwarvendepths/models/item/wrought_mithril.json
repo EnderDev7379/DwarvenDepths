@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dwarvendepths:item/mithril"
+    "layer0": "dwarvendepths:item/wrought_mithril"
   }
 }

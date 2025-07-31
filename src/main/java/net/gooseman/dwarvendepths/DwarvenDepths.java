@@ -68,16 +68,16 @@ public class DwarvenDepths {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_IMPURE_MITHRIL);
             event.accept(ModItems.IMPURE_MITHRIL);
-            event.accept(ModItems.RAW_MITHRIL);
-            event.accept(ModItems.MITHRIL);
+            event.accept(ModItems.RAW_WROUGHT_MITHRIL);
+            event.accept(ModItems.WROUGHT_MITHRIL);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.IMPURE_MITHRIL_ORE);
             event.accept(ModBlocks.RAW_IMPURE_MITHRIL_BLOCK);
-            event.accept(ModBlocks.MITHRIL_ORE);
-            event.accept(ModBlocks.RAW_MITHRIL_BLOCK);
+            event.accept(ModBlocks.WROUGHT_MITHRIL_ORE);
+            event.accept(ModBlocks.RAW_WROUGHT_MITHRIL_BLOCK);
         } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.IMPURE_MITHRIL_BLOCK);
-            event.accept(ModBlocks.MITHRIL_BLOCK);
+            event.accept(ModBlocks.WROUGHT_MITHRIL_BLOCK);
         } else if (event.getTabKey() == ModCreativeTabs.DWARVEN_METALS_TAB.getKey()) {
             event.accept(ModBlocks.IMPURE_MITHRIL_ORE);
             event.accept(ModBlocks.RAW_IMPURE_MITHRIL_BLOCK);
@@ -85,11 +85,11 @@ public class DwarvenDepths {
             event.accept(ModBlocks.IMPURE_MITHRIL_BLOCK);
             event.accept(ModItems.IMPURE_MITHRIL);
 
-            event.accept(ModBlocks.MITHRIL_ORE);
-            event.accept(ModBlocks.RAW_MITHRIL_BLOCK);
-            event.accept(ModItems.RAW_MITHRIL);
-            event.accept(ModBlocks.MITHRIL_BLOCK);
-            event.accept(ModItems.MITHRIL);
+            event.accept(ModBlocks.WROUGHT_MITHRIL_ORE);
+            event.accept(ModBlocks.RAW_WROUGHT_MITHRIL_BLOCK);
+            event.accept(ModItems.RAW_WROUGHT_MITHRIL);
+            event.accept(ModBlocks.WROUGHT_MITHRIL_BLOCK);
+            event.accept(ModItems.WROUGHT_MITHRIL);
         }
     }
 

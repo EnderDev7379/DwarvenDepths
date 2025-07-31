@@ -2,6 +2,8 @@
 
 ## PRE-ENTRY NOTES
 
+OUTDATED, too lazy to change, basically switched it so that all the titanium is optional and mithril things are erquiered
+
 ### FORMATTING
 
 **WHEN A CERTAIN ENTRY TYPE IS MENTIONED, IT INCLUDES ANY ENTRY TYPES THAT INHERIT THEIR PROPERTIES UNLESS PREFIXED BY *EXCLUSIVELY* OR SYNONYMS AND OTHER FORMS**
@@ -93,7 +95,8 @@ OPTIONAL:
 
 ## Episode 7: Advanced Blocks
 
-NO CURRENT ENTRIES
+REQUIRED:
+- Purification Altar - Requieres 27 of an inferior material (currently only impure mithril) in its smelted form to transmute it into a more pure form (currently only mithril)
 
 ## Episode 8: Food and Fuel
 
@@ -115,7 +118,7 @@ UNPOLISHED:
 
 ## Episode 11: Datagen
 
-IDK WHAT DATEGEN IS
+YEAH just LIKE YK
 
 ## Episode 12: Non-Block Blocks
 

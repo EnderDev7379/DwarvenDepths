@@ -14,7 +14,7 @@ public class ModCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DWARVEN_METALS_TAB = CREATIVE_TAB.register("dwarven_metals_tab",
             () -> CreativeModeTab.builder()
-                    .icon(ModItems.MITHRIL::toStack)
+                    .icon(ModItems.WROUGHT_MITHRIL::toStack)
                     .title(Component.translatable("creativetab.dwarvendepths.dwarven_metals_tab"))
                     .build());
 
