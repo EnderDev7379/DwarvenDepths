@@ -19,5 +19,11 @@
   "dwarvendepths.configuration.magicNumberIntroduction": "Magic Number Text",
   "dwarvendepths.configuration.magicNumber": "Magic Number",
 
-  "creativetab.dwarvendepths.dwarven_metals_tab": "Dwarven Metals"
+  "creativetab.dwarvendepths.dwarven_metals_tab": "Dwarven Metals",
+
+  "tooltip.dwarvendepths.common": "§7Press §9§lSHIFT §r§7to view lore",
+  "tooltip.dwarvendepths.raw_impure_mithril": "§7A common metal found deep in the earth",
+  "tooltip.dwarvendepths.impure_mithril": "§7An impure, fragile, barely usable metal",
+  "tooltip.dwarvendepths.raw_wrought_mithril": "§7A purified version of mithril, though to only be forgeable",
+  "tooltip.dwarvendepths.wrought_mithril": "§7A solid, workable metal, better than diamond"
 }

@@ -3,6 +3,9 @@ package net.gooseman.dwarvendepths;
 import net.gooseman.dwarvendepths.block.ModBlocks;
 import net.gooseman.dwarvendepths.creativemodetab.ModCreativeTabs;
 import net.gooseman.dwarvendepths.item.ModItems;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
