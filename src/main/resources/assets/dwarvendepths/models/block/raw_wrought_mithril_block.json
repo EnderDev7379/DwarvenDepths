@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "dwarvendepths:block/raw_wrought_mithril_block"
-  }
-}
