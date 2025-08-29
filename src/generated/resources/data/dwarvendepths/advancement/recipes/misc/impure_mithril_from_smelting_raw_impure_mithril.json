@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_impure_mithril": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dwarvendepths:raw_impure_mithril"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dwarvendepths:impure_mithril_from_smelting_raw_impure_mithril"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_impure_mithril"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dwarvendepths:impure_mithril_from_smelting_raw_impure_mithril"
+    ]
+  }
+}

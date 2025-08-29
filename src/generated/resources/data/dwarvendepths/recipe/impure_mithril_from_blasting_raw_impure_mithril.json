@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 160,
+  "experience": 27.0,
+  "group": "impure_mithril",
+  "ingredient": "dwarvendepths:raw_impure_mithril",
+  "result": {
+    "count": 1,
+    "id": "dwarvendepths:impure_mithril"
+  }
+}
