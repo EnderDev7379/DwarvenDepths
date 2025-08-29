@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 55.0,
+  "group": "wrought_mithril",
+  "ingredient": "dwarvendepths:raw_wrought_mithril",
+  "result": {
+    "count": 1,
+    "id": "dwarvendepths:impure_mithril"
+  }
+}

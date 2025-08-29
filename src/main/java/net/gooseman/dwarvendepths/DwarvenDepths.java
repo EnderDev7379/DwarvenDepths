@@ -2,6 +2,7 @@ package net.gooseman.dwarvendepths;
 
 import net.gooseman.dwarvendepths.block.ModBlocks;
 import net.gooseman.dwarvendepths.creativemodetab.ModCreativeTabs;
+import net.gooseman.dwarvendepths.datagen.DataGenerators;
 import net.gooseman.dwarvendepths.item.ModItems;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -101,5 +102,7 @@ public class DwarvenDepths {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+
+
     }
 }

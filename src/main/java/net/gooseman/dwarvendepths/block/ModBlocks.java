@@ -3,6 +3,7 @@ package net.gooseman.dwarvendepths.block;
 import net.gooseman.dwarvendepths.DwarvenDepths;
 import net.gooseman.dwarvendepths.item.ModItems;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -36,6 +37,8 @@ public class ModBlocks {
             BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(16, 1200));
+
+    public static DeferredBlock<Block> OIL_BARREL_BLOCK = BLOCKS.registerBlock("oil_barrel", Block::new, BlockBehaviour.Properties.of());
 
     public static void registerBlockItems() {
         ModItems.ITEMS.registerSimpleBlockItem(IMPURE_MITHRIL_ORE);

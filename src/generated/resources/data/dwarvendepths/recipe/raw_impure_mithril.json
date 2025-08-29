@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "dwarvendepths:raw_impure_mithril_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "dwarvendepths:raw_impure_mithril"
+  }
+}

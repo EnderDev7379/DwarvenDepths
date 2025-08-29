@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "conditions": [
         {
@@ -12,10 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dwarvendepths:wrought_mithril_block"
+          "name": "dwarvendepths:raw_wrought_mithril_block"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
-  "random_sequence": "dwarvendepths:blocks/mithril_block"
+  "random_sequence": "dwarvendepths:blocks/raw_wrought_mithril_block"
 }
