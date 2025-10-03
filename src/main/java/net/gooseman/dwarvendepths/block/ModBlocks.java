@@ -3,7 +3,6 @@ package net.gooseman.dwarvendepths.block;
 import net.gooseman.dwarvendepths.DwarvenDepths;
 import net.gooseman.dwarvendepths.item.ModItems;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -40,14 +39,24 @@ public class ModBlocks {
 
     public static DeferredBlock<Block> OIL_BARREL_BLOCK = BLOCKS.registerBlock("oil_barrel", Block::new, BlockBehaviour.Properties.of());
 
+    public static DeferredBlock<Block> PURIFICATION_CATALYST = BLOCKS.registerBlock("purification_catalyst", PurificationCatalystBlock::new, BlockBehaviour.Properties.of());
+
+    public static DeferredBlock<Block> MITHRIL_COAL_LAMP = BLOCKS.registerBlock("coal_lamp", MithrilCoalLampBlock::new,
+            BlockBehaviour.Properties.of()
+                    .lightLevel(state -> state.getValue(MithrilCoalLampBlock.LIT) ? state.getValue(MithrilCoalLampBlock.COAL_LEVEL) : 0));
+
     public static void registerBlockItems() {
         ModItems.ITEMS.registerSimpleBlockItem(IMPURE_MITHRIL_ORE);
         ModItems.ITEMS.registerSimpleBlockItem(RAW_IMPURE_MITHRIL_BLOCK);
         ModItems.ITEMS.registerSimpleBlockItem(IMPURE_MITHRIL_BLOCK);
+
         ModItems.ITEMS.registerSimpleBlockItem(WROUGHT_MITHRIL_ORE);
         ModItems.ITEMS.registerSimpleBlockItem(RAW_WROUGHT_MITHRIL_BLOCK);
         ModItems.ITEMS.registerSimpleBlockItem(WROUGHT_MITHRIL_BLOCK);
 
+        ModItems.ITEMS.registerSimpleBlockItem(PURIFICATION_CATALYST);
+
+        ModItems.ITEMS.registerSimpleBlockItem(MITHRIL_COAL_LAMP);
     }
 
     public static void register(IEventBus eventBus) {

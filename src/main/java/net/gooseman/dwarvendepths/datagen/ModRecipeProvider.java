@@ -12,13 +12,13 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
-import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -42,6 +42,9 @@ public class ModRecipeProvider extends RecipeProvider {
 
         this.oreSmelting(List.of(ModBlocks.WROUGHT_MITHRIL_ORE, ModItems.RAW_WROUGHT_MITHRIL), RecipeCategory.MISC, ModItems.IMPURE_MITHRIL, 55, 400, "wrought_mithril");
         this.oreBlasting(List.of(ModBlocks.WROUGHT_MITHRIL_ORE, ModItems.RAW_WROUGHT_MITHRIL), RecipeCategory.MISC, ModItems.IMPURE_MITHRIL, 55, 200, "wrought_mithril");
+
+        // Misc
+        this.shaped(RecipeCategory.MISC, ModBlocks.MITHRIL_COAL_LAMP).define('M', ModItems.WROUGHT_MITHRIL).define('G', Items.GLASS).pattern("MMM").pattern("MGM").pattern("MMM").unlockedBy(getHasName(ModItems.WROUGHT_MITHRIL), has(ModItems.WROUGHT_MITHRIL)).save(output);
     }
 
     public static class Runner extends RecipeProvider.Runner {

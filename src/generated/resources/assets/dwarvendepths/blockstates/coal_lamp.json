@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "dwarvendepths:block/coal_lamp_unlit"
+    },
+    "lit=true": {
+      "model": "dwarvendepths:block/coal_lamp_lit"
+    }
+  }
+}

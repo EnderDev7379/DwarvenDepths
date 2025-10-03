@@ -1,18 +1,15 @@
 package net.gooseman.dwarvendepths.datagen;
 
-import net.gooseman.dwarvendepths.DwarvenDepths;
+import net.gooseman.dwarvendepths.block.MithrilCoalLampBlock;
 import net.gooseman.dwarvendepths.block.ModBlocks;
 import net.gooseman.dwarvendepths.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.model.ModelLocationUtils;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.renderer.item.BlockModelWrapper;
+import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.Item;
-
-import java.util.List;
 
 public class ModModelProvider extends ModelProvider {
 
@@ -32,6 +29,15 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.WROUGHT_MITHRIL_BLOCK.get());
 
         blockModels.createTrivialCube(ModBlocks.OIL_BARREL_BLOCK.get());
+
+        blockModels.createTrivialCube(ModBlocks.PURIFICATION_CATALYST.get());
+
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ModBlocks.MITHRIL_COAL_LAMP.get()).with(BlockModelGenerators.createBooleanModelDispatch(
+                MithrilCoalLampBlock.LIT,
+                BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.MITHRIL_COAL_LAMP.get(), "_lit", ModelTemplates.CUBE_ALL, TextureMapping::cube)),
+                BlockModelGenerators.plainVariant(blockModels.createSuffixedVariant(ModBlocks.MITHRIL_COAL_LAMP.get(), "_unlit", ModelTemplates.CUBE_ALL, TextureMapping::cube))
+        )));
+
 
         // Items
         itemModels.generateFlatItem(ModItems.RAW_IMPURE_MITHRIL.get(), ModelTemplates.FLAT_ITEM);

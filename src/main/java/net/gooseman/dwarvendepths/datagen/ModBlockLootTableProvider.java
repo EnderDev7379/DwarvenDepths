@@ -7,9 +7,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.NumberProvider;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
 
@@ -29,6 +26,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.WROUGHT_MITHRIL_BLOCK.get());
 
         dropSelf(ModBlocks.OIL_BARREL_BLOCK.get());
+        dropWhenSilkTouch(ModBlocks.PURIFICATION_CATALYST.get());
+        dropSelf(ModBlocks.MITHRIL_COAL_LAMP.get());
     }
 
     @Override

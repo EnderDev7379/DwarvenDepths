@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:glass",
+    "M": "dwarvendepths:wrought_mithril"
+  },
+  "pattern": [
+    "MMM",
+    "MGM",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "dwarvendepths:coal_lamp"
+  }
+}
